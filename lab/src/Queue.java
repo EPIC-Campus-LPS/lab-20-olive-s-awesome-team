@@ -4,7 +4,9 @@ import java.util.NoSuchElementException;
 public class Queue<E> {
     private LinkedList<E> line;
 
-    public Queue() {}
+    public Queue() {
+        line = new LinkedList<>();
+    }
     /**
      * Adds an element to the end of the queue [Runtime: O(1)]
      * @param element The element value to add
